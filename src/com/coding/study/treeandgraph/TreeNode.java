@@ -1,5 +1,8 @@
 package com.coding.study.treeandgraph;
 
+/*
+  이진 탐색 트리 구현
+ */
 public class TreeNode {
     public int data;
     public TreeNode left, right, parent;
