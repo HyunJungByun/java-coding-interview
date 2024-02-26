@@ -24,6 +24,7 @@ public class ex_4_2 {
         }
         int mid = (start + end) / 2;
         TreeNode n = new TreeNode(arr[mid]);    // 배열 가운데 원소를 트리에 삽입
+        // 1 2 3 4 '5' 6 7 8 9
         n.left = createMinimalBST(arr, start, mid - 1); // 왼쪽 하위 트리에 왼쪽 절반 배열 원소들을 삽입하며 재귀호출
         n.right = createMinimalBST(arr, mid + 1, end);  // 오른쪽 하위 트리에 오른쪽 절반 배열 원소들을 삽입하며 재귀호출
         return n;
